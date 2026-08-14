@@ -1,0 +1,6 @@
+file_opener = "vscode"
+personality = "pragmatic"
+model_reasoning_effort = "medium"
+
+[history]
+persistence = "save-all"

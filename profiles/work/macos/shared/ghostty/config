@@ -1,0 +1,6 @@
+# Work profile defaults. Keep work-specific appearance and behavior here.
+theme = dark:Dracula+,light:Violet Light
+keybind = cmd+v=paste_from_clipboard
+keybind = cmd+shift+v=paste_from_clipboard
+tab-inherit-working-directory = true
+split-inherit-working-directory = true

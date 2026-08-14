@@ -1,0 +1,7 @@
+# Review this list before running make PROFILE=personal startup-enable.
+Ice
+Caffeine
+Google Drive
+Dropbox
+Tailscale
+Spectacle

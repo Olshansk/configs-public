@@ -1,0 +1,30 @@
+.DS_Store
+.local/
+.env
+.env.local
+secrets.sh
+*.key
+*.pem
+*_secret
+secrets/
+
+# Local histories, caches, logs, sessions, and application state.
+.bash_history
+.pythonhistory
+.wscat_history
+history/
+.docker/
+.ipython/
+claude/logs/
+claude/sessions/
+claude/plans/
+claude/cache/
+claude/plugins/
+*.sqlite
+*.db
+*.log
+
+# Local exports and machine-specific settings.
+*.local
+*.backup
+.zcompdump*

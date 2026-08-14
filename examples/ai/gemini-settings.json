@@ -1,0 +1,8 @@
+{
+  "ui": {
+    "theme": "Atom One"
+  },
+  "output": {
+    "format": "text"
+  }
+}

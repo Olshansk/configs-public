@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "tools": [
+    {
+      "id": "agentsview",
+      "command": "agentsview",
+      "profiles": ["base", "work", "personal"],
+      "classification": "manual",
+      "install": {"method": "manual", "binary": "~/.local/bin/agentsview"},
+      "verify": "agentsview --version",
+      "pinned": true,
+      "notes": "Local web viewer for AI agent sessions."
+    },
+    {
+      "id": "atuin",
+      "command": "atuin",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "atuin"},
+      "verify": "atuin --version"
+    },
+    {
+      "id": "fd",
+      "command": "fd",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "fd"},
+      "verify": "fd --version"
+    },
+    {
+      "id": "fzf",
+      "command": "fzf",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "fzf"},
+      "verify": "fzf --version"
+    },
+    {
+      "id": "gh",
+      "command": "gh",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "gh"},
+      "verify": "gh --version"
+    },
+    {
+      "id": "jq",
+      "command": "jq",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "jq"},
+      "verify": "jq --version"
+    },
+    {
+      "id": "ripgrep",
+      "command": "rg",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "ripgrep"},
+      "verify": "rg --version"
+    },
+    {
+      "id": "scrt",
+      "command": "scrt",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "scrt"},
+      "verify": "scrt --version"
+    },
+    {
+      "id": "python3",
+      "command": "python3",
+      "profiles": ["base", "work", "personal"],
+      "classification": "manual",
+      "install": {"method": "manual", "binary": "/usr/local/bin/python3"},
+      "verify": "python3 --version",
+      "notes": "Keep the unversioned executable; ignore versioned absolute paths from history."
+    },
+    {
+      "id": "claude",
+      "command": "claude",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_cask", "package": "claude-code@latest"},
+      "verify": "claude --version"
+    },
+    {
+      "id": "uv",
+      "command": "uv",
+      "profiles": ["base", "work", "personal"],
+      "classification": "manual",
+      "install": {"method": "manual", "binary": "~/.local/bin/uv"},
+      "verify": "uv --version"
+    },
+    {
+      "id": "git",
+      "command": "git",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "git"},
+      "verify": "git --version"
+    },
+    {
+      "id": "codex",
+      "command": "codex",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_cask", "package": "codex"},
+      "verify": "codex --version"
+    },
+    {
+      "id": "pytest",
+      "command": "pytest",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "pytest"},
+      "verify": "pytest --version"
+    },
+    {
+      "id": "brew",
+      "command": "brew",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "bootstrap", "package": "homebrew"},
+      "verify": "brew --version"
+    },
+    {
+      "id": "pip",
+      "command": "pip",
+      "profiles": ["base", "work", "personal"],
+      "classification": "manual",
+      "install": {"method": "manual", "binary": "~/.local/bin/pip"},
+      "verify": "pip --version"
+    },
+    {
+      "id": "bat",
+      "command": "bat",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "bat"},
+      "verify": "bat --version"
+    },
+    {
+      "id": "docker",
+      "command": "docker",
+      "profiles": ["base", "work", "personal"],
+      "classification": "manual",
+      "install": {"method": "manual", "binary": "/usr/local/bin/docker"},
+      "verify": "docker --version",
+      "notes": "The CLI may be supplied by Docker Desktop."
+    },
+    {
+      "id": "stripe",
+      "command": "stripe",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "stripe"},
+      "verify": "stripe version"
+    },
+    {
+      "id": "tree",
+      "command": "tree",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "tree"},
+      "verify": "tree --version"
+    },
+    {
+      "id": "render",
+      "command": "render",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "render"},
+      "verify": "render --version"
+    },
+    {
+      "id": "pip3",
+      "command": "pip3",
+      "profiles": ["base", "work", "personal"],
+      "classification": "manual",
+      "install": {"method": "manual", "binary": "~/.local/bin/pip3"},
+      "verify": "pip3 --version"
+    },
+    {
+      "id": "iredis",
+      "command": "iredis",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "iredis"},
+      "verify": "iredis --version"
+    },
+    {
+      "id": "kitten",
+      "command": "kitten",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_cask", "package": "kitty"},
+      "verify": "kitten --version"
+    },
+    {
+      "id": "uvx",
+      "command": "uvx",
+      "profiles": ["base", "work", "personal"],
+      "classification": "manual",
+      "install": {"method": "manual", "binary": "~/.local/bin/uvx"},
+      "verify": "uvx --version",
+      "notes": "Installed alongside uv."
+    },
+    {
+      "id": "pyenv",
+      "command": "pyenv",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "pyenv"},
+      "verify": "pyenv --version"
+    },
+    {
+      "id": "htmlq",
+      "command": "htmlq",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "htmlq"},
+      "verify": "htmlq --version"
+    },
+    {
+      "id": "mmdc",
+      "command": "mmdc",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "mermaid-cli"},
+      "verify": "mmdc --version"
+    },
+    {
+      "id": "redis-cli",
+      "command": "redis-cli",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "redis"},
+      "verify": "redis-cli --version"
+    },
+    {
+      "id": "btop",
+      "command": "btop",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "btop"},
+      "verify": "btop --version"
+    },
+    {
+      "id": "gs",
+      "command": "gs",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "ghostscript"},
+      "verify": "gs --version"
+    },
+    {
+      "id": "bash",
+      "command": "bash",
+      "profiles": ["base", "work", "personal"],
+      "classification": "managed",
+      "install": {"method": "brew_formula", "package": "bash"},
+      "verify": "bash --version"
+    },
+    {
+      "id": "cursor-agent",
+      "command": "cursor-agent",
+      "profiles": ["base", "work", "personal"],
+      "classification": "manual",
+      "install": {"method": "manual", "binary": "~/.local/bin/cursor-agent"},
+      "verify": "cursor-agent --version"
+    },
+    {
+      "id": "port-kill",
+      "command": "port-kill",
+      "profiles": ["base", "work", "personal"],
+      "classification": "manual",
+      "install": {"method": "manual", "binary": "~/.local/bin/port-kill"},
+      "verify": "port-kill --help"
+    }
+  ]
+}
