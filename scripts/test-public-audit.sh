@@ -13,6 +13,7 @@ mkdir -p "$TEST_ROOT/scripts"
 cp "$REPO_ROOT/scripts/public-audit.sh" "$TEST_ROOT/scripts/public-audit.sh"
 chmod +x "$TEST_ROOT/scripts/public-audit.sh"
 printf 'safe\n' >"$TEST_ROOT/safe.txt"
+printf 'local-only\n' | git -C "$TEST_ROOT" hash-object -w --stdin >/dev/null
 
 if (cd "$TEST_ROOT" && ./scripts/public-audit.sh) >/dev/null 2>&1; then
   :

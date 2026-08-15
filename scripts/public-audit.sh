@@ -41,8 +41,7 @@ done
 
 if git rev-parse --verify HEAD >/dev/null 2>&1; then
   if git fsck --full --no-reflogs --unreachable 2>/dev/null | rg -q .; then
-    printf '%s❌ Unreachable Git objects exist; public history is not clean%s\n' "$RED" "$RESET"
-    failures=1
+    printf '%s⚠️ Local unreachable Git objects exist; they are not part of the published refs%s\n' "$RED" "$RESET"
   fi
 else
   printf '%s⚠️ No public commit exists yet; rerun this audit after the initial root commit%s\n' "$RED" "$RESET"
